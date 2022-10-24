@@ -33,6 +33,6 @@ https://trello.com/invite/b/rjesVVVi/ATTIb3f9d9bd8ccfadc6853844e76bca4d10AFFD053
 ## Authors
 
 - [@JeffersonPulido](https://www.github.com/JeffersonPulido)
-- [@DaniloDiaz](https://www.github.com/MichellCardona)
-- [@AdrianaPico](https://www.github.com/CamiloGarcia)
-- [@Leidy](https://www.github.com/CamiloGarcia)
+- [@DaniloDiaz](https://github.com/DaniloDiaz08)
+- [@AdrianaPico](https://github.com/adrianapico)
+- [@LeidyRivera](https://github.com/Ladyriv)
