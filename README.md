@@ -22,7 +22,7 @@ Para desplegar este proyecto:
 
 https://semillas.netlify.app
 
-##Preview
+## Preview
 
 Aqui van imagenes
 
