@@ -1,0 +1,85 @@
+/**FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&family=Playfair+Display:ital,wght@0,400;0,800;1,400&display=swap');
+/**VAR*/
+:root{
+    /*COLORES*/
+    --texto: #000000;
+    --fondo: #FFFFFF;
+    --verdeOscuro: #009458;
+    --verdeClaro: #69BF97;
+    /*FUENTES*/
+    --titulos: 'Dosis', sans-serif;
+    --parrafos: 'Playfair Display', serif;
+    /*TAMAÑOS*/
+    --h1: 50pt;
+    --h2: 40pt;
+    --h3: 30pt;
+    --h4: 20pt;
+    --p: 14pt;
+}
+
+/*TITLE*/
+.containerTitle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 7%;
+    display: grid;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.imgLogo{
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.exit{
+    display: grid;
+    margin-right: 3%;
+}
+
+.btnExit{
+    width: 5em;
+    height: 2.5em;
+    justify-self: center;
+    align-self: center;
+    background-color: transparent;
+    border: 2px solid var(--verdeOscuro);
+    border-radius: 10px;
+    font-size: var(--p);
+    padding: 0;
+    color: var(--verdeOscuro);
+    font-weight: 800;
+    font-family: var(--parrafos);
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.btnExit:hover{
+    color: white;
+    background-color: var(--verdeOscuro);
+}
+
+.tituloGeneral{
+    font-family: var(--titulos);
+    color: var(--verdeOscuro);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .exit{
+        display: none;
+    }
+    .logo{
+        width: 20%;
+    }
+    .tituloGeneral{
+        font-size: var(--h4);
+        margin-right: 5%;
+    }
+}
