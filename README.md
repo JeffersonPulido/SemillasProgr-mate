@@ -17,6 +17,9 @@ Para desplegar este proyecto:
 ```bash
   Ejecutar archivo Index.html
 ```
+## Presentacion
+
+https://www.canva.com/design/DAFQDA23xJc/Kl41yzbKhQyM2jIL6PxLkQ/edit?utm_content=DAFQDA23xJc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ## Demo
 
