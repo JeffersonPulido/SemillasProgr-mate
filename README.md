@@ -20,7 +20,7 @@ Para desplegar este proyecto:
 
 ## Demo
 
-https://semillas.netlify.app
+https://semillasprogramate.netlify.app
 
 ## Preview
 
