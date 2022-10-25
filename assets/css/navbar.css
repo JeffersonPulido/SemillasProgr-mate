@@ -5,7 +5,7 @@
 :root {
     /*COLORES*/
     --texto: #000000;
-    --fondo: #FFFFFF;
+    --fondo: #D1D2D2;
     --verdeOscuro: #009458;
     --verdeClaro: #69BF97;
     /*FUENTES*/
@@ -34,16 +34,16 @@ nav {
     position: relative;
     width: 80px;
     height: 80px;
-    margin-right: 5px;
+    margin-right: 10px;
     border-radius: 50%;
     transition: all .8s;
     cursor: pointer;
-    background-color: white;
+    background-color: var(--fondo);
 }
 
 .icon:hover {
     box-shadow: 0 0 20px 5px var(--verdeOscuro);
-    background-color: white;
+    background-color: var(--fondo);
 }
 
 .iconTitle {
