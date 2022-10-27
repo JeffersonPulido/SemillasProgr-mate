@@ -1,4 +1,4 @@
-:root{
+:root {
     /*COLORES*/
     --texto: #ffffff;
     --fondo: #000000;
@@ -14,6 +14,7 @@
     --h4: 20pt;
     --p: 14pt;
 }
+
 /*BADGE*/
 .containerUser {
     display: grid;
@@ -32,6 +33,7 @@
     justify-content: center;
     align-content: center;
 }
+
 /*TRAPECIO*/
 .trapecio {
     width: 250px;
@@ -42,7 +44,7 @@
     margin-top: 5%;
 }
 
-.trapecio:hover{
+.trapecio:hover {
     border-bottom: 100px solid var(--verdeClaro);
 }
 
@@ -56,10 +58,53 @@
     rotate: 180deg;
 }
 
-.trapecioInvertido:hover{
+.trapecioInvertido:hover {
     border-bottom: 100px solid var(--verdeClaro);
 }
+
 /*ESTRELLA*/
+#estrella {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
+
+#estrella:before {
+    border-bottom: 80px solid red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+
+#estrella:after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+}
+
 /*LOG OF*/
 .shutdown .inner {
     border: 5px solid var(--texto);
@@ -91,18 +136,19 @@
     width: 0;
     cursor: pointer;
 }
+
 /* MOBILE */
 @media (max-width: 768px) {
     .shutdown .inner {
         left: -5px;
         top: 15px;
     }
-    
+
     .shutdown .bar {
         left: 13px;
         top: -30px;
     }
-    
+
     .shutdown .sub-bar {
         margin-left: 10px;
         margin-top: -35px;

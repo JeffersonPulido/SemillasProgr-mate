@@ -1,0 +1,118 @@
+/**FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&family=Playfair+Display:ital,wght@0,400;0,800;1,400&display=swap');
+
+/**VAR*/
+:root {
+    /*COLORES*/
+    --texto: #ffffff;
+    --fondo: #000000;
+    --verdeOscuro: #009458;
+    --verdeClaro: #69BF97;
+    /*FUENTES*/
+    --titulos: 'Dosis', sans-serif;
+    --parrafos: 'Playfair Display', serif;
+    /*TAMAÑOS*/
+    --h1: 50pt;
+    --h2: 40pt;
+    --h3: 30pt;
+    --h4: 20pt;
+    --p: 14pt;
+}
+
+/*CONTENEDOR GENERAL ESTRELLAS*/
+.containerEstrellas {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.marco {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid var(--texto);
+    border-radius: 5px;
+    height: 300px;
+    width: 40rem;
+    padding: 5%;
+}
+
+.nombreValor {
+    font-family: var(--parrafos);
+    color: var(--texto);
+    font-size: var(--p);
+    text-align: left;
+    margin-right: 25px;
+    width: 85px;
+}
+.valorEstrella {
+    display: inline-flex;
+    align-items: first baseline;
+    justify-content: center;
+}
+/*FIGURA ESTRELLAS*/
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#form p {
+    text-align: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color: grey;
+    font-size: var(--h4);
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-align: left;
+}
+
+label:hover,
+label:hover~label {
+    color: var(--verdeOscuro);
+    cursor: pointer;
+}
+
+input[type="radio"]:checked~label {
+    color: var(--verdeOscuro);
+    cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .marco {
+        grid-template-columns: repeat(1, 1fr);
+        height: 550px;
+        padding: 0%;
+        width: 20rem;
+    }
+}
+
+/* DESKTOP BIG*/
+@media (min-width: 1800px) {
+    .marco {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 2px solid var(--texto);
+        border-radius: 5px;
+        height: 360px;
+        width: 55rem;
+        padding: 5%;
+    }
+    .nombreValor {
+        font-size: var(--h4);
+        width: 145px;
+    }
+    label {
+        font-size: var(--h3);
+    }
+}
