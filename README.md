@@ -26,8 +26,10 @@ https://www.canva.com/design/DAFQDA23xJc/Kl41yzbKhQyM2jIL6PxLkQ/edit?utm_content
 https://semillasprogramate.netlify.app
 
 ## Preview
-
-Aqui van imagenes
+![Home Page](https://raw.githubusercontent.com/JeffersonPulido/SemillasProgr-mate/master/assets/images/home.png)
+![Home Mobile](https://raw.githubusercontent.com/JeffersonPulido/SemillasProgr-mate/master/assets/images/home.png)
+![Indicadores Page](https://raw.githubusercontent.com/JeffersonPulido/SemillasProgr-mate/master/assets/images/home.png)
+![Checklist Page](https://raw.githubusercontent.com/JeffersonPulido/SemillasProgr-mate/master/assets/images/home.png)
 
 ## Trello
 
