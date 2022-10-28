@@ -1,79 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--META-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--TITLE-->
-        <title>Semillas || Indicadores</title>
-        <!--CSS-->
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/navbar.css">
-        <link rel="stylesheet" href="../css/adriana.css">
-        <!--ICO-->
-        <link rel="shortcut icon" href="../images/logoSWhite_1.svg" type="image/x-icon">
-    </head>
-    <body>
-        <!--NAVBAR-->
-        <nav>
-            <div class="icon">
-                <a href="../../index.html">
-                    <svg heigth="80" width="80">
-                        <circle cx="40" cy="40" r=35 stroke-width="4" fill="none" ></circle>
-                    </svg>
-                    <img src="../images/info.svg" alt="" class="iconTitle">
-                </a>
-            </div>
-            <div class="icon">
-                <a href="./indicadores.html">
-                    <svg heigth="80" width="80">
-                        <circle cx="40" cy="40" r=35 stroke-width="4" fill="none" ></circle>
-                    </svg>
-                    <img src="../images/indicators.svg" alt="" class="iconTitle">
-                </a>
-            </div>
-            <div class="icon">
-                <a href="./tareas.html">
-                    <svg heigth="80" width="80">
-                        <circle cx="40" cy="40" r=35 stroke-width="4" fill="none" ></circle>
-                    </svg>
-                    <img src="../images/checklist.svg" alt="" class="iconTitle">
-                </a>
-            </div>
-        </nav>
-        <!--END NAVBAR-->
-        <!--TITLE-->
-        <div class="containerTitle">
-            <div class="logo">
-                <img src="../images/logoSWhite_1.svg" alt="" class="imgLogo">
-            </div>
-            <h1 class="tituloGeneral">Indicadores Emocionales</h1>
-            <div class="exit">
-                <img src="../images/logoff.svg" alt="" class="btnExit">
+<head>
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TITLE-->
+    <title>Semillas || Indicadores</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/adriana.css">
+    <link rel="stylesheet" href="../css/figuras.css">
+    <link rel="stylesheet" href="../css/animaciones.css">
+    <link rel="stylesheet" href="../css/indicadores.css">
+    <!--ICO-->
+    <link rel="shortcut icon" href="../images/logoSWhite_1.svg" type="image/x-icon">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <div class="icon">
+            <a href="../../index.html">
+                <svg heigth="80" width="80">
+                    <circle cx="40" cy="40" r=35 stroke-width="4" fill="none"></circle>
+                </svg>
+                <img src="../images/info.svg" alt="" class="iconTitle">
+            </a>
+        </div>
+        <div class="icon">
+            <a href="./indicadores.html">
+                <svg heigth="80" width="80">
+                    <circle cx="40" cy="40" r=35 stroke-width="4" fill="none"></circle>
+                </svg>
+                <img src="../images/indicators.svg" alt="" class="iconTitle">
+            </a>
+        </div>
+        <div class="icon">
+            <a href="./tareas.html">
+                <svg heigth="80" width="80">
+                    <circle cx="40" cy="40" r=35 stroke-width="4" fill="none"></circle>
+                </svg>
+                <img src="../images/checklist.svg" alt="" class="iconTitle">
+            </a>
+        </div>
+    </nav>
+    <!--END NAVBAR-->
+    <!--TITLE-->
+    <div class="containerTitle">
+        <div class="logo">
+            <img src="../images/logoSWhite_1.svg" alt="" class="imgLogo">
+        </div>
+        <h1 class="tituloGeneral">Indicadores Emocionales</h1>
+        <div class="exit">
+            <div class="shutdown rubberBand">
+                <div class="inner"></div>
+                <div class="sub-bar"></div>
+                <div class="bar"></div>
             </div>
         </div>
-        <!--END TITLE-->
-
-        <!-- CIRCULOS INDICADORES -->
-
-        <div class="circle">
-            <div class="card">
-                <div class="box">
-                    <div class="par">
-                        <svg class="ap">
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70"></circle>
-                        </svg>
-                        <div class="num">
-                            <h2>90 <span>%</span></h2>
-                        </div>
-                    </div>
-                    <div class="text">EMOCION</div>
-                </div>
+    </div>
+    <!--END TITLE-->
+    <!-- CIRCULOS INDICADORES -->
+    <div class="circle">
+        <div class="card">
+            <svg class="radial-progress" data-percentage="30" viewBox="0 0 80 80">
+                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 55;"></circle>
+                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+            </svg>
+            <div class="text">ABURRIMIENTO</div>
+        </div>
+        <div class="card">
+            <svg class="radial-progress" data-percentage="30" viewBox="0 0 80 80">
+                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 25;"></circle>
+                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+            </svg>
+            <div class="text">ADMIRACIÓN</div>
+        </div>
+        <div class="card">
+            <svg class="radial-progress" data-percentage="30" viewBox="0 0 80 80">
+                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 90;"></circle>
+                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">60%</text>
+            </svg>
+            <div class="text">ADORACIÓN</div>
+        </div>
+        <div class="card">
+            <svg class="radial-progress" data-percentage="30" viewBox="0 0 80 80">
+                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 110;"></circle>
+                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">50%</text>
+            </svg>
+            <div class="text">ANSIA</div>
+        </div>
+        <div class="card">
+            <svg class="radial-progress" data-percentage="30" viewBox="0 0 80 80">
+                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
+            </svg>
+            <div class="text">CONFUSIÓN</div>
+        </div>
+        <div class="card">
+            <svg class="radial-progress" data-percentage="30" viewBox="0 0 80 80">
+                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 20;"></circle>
+                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+            </svg>
+            <div class="text">ÉXTASIS</div>
+        </div>
+        <div class="card">
+            <svg class="radial-progress" data-percentage="30" viewBox="0 0 80 80">
+                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 110;"></circle>
+                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">50%</text>
+            </svg>
+            <div class="text">DISGUSTO</div>
+        </div>
+        <div class="card">
+            <svg class="radial-progress" data-percentage="30" viewBox="0 0 80 80">
+                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 0;"></circle>
+                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">100%</text>
+            </svg>
+            <div class="text">VALENTIA</div>
+        </div>
+    </div>
+    <!-- END CIRCULOS INDICADORES -->
+    <!--ESTRELLAS-->
+    <!-- <div id="estrella"></div> -->
+    <div class="containerEstrellas">
+        <div class="marco">
+            <div class="valorEstrella tada">
+                <p class="nombreValor">Felicidad</p>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2" checked>
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1" checked>
+                        <label for="radio5">★</label>
+                    </p>
+                </form>
             </div>
-
-
-        <!-- END CIRCULOS INDICADORES -->
-    </body>
+            <div class="valorEstrella tada">
+                <p class="nombreValor">Seguridad</p>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3" checked>
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                    </p>
+                </form>
+            </div>
+            <div class="valorEstrella tada">
+                <p class="nombreValor">Culpa</p>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4" checked>
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                    </p>
+                </form>
+            </div>
+            <div class="valorEstrella tada">
+                <p class="nombreValor">Curiosidad</p>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5" checked>
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                    </p>
+                </form>
+            </div>
+            <div class="valorEstrella tada">
+                <p class="nombreValor">Enfado</p>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3" checked>
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                    </p>
+                </form>
+            </div>
+            <div class="valorEstrella tada">
+                <p class="nombreValor">Tristeza</p>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2" checked>
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                    </p>
+                </form>
+            </div>
+            <div class="valorEstrella tada">
+                <p class="nombreValor">Alegria</p>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4" checked>
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                    </p>
+                </form>
+            </div>
+            <div class="valorEstrella tada">
+                <p class="nombreValor">Miedo</p>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2" checked>
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--END ESTRELLAS-->
+</body>
 </html>
