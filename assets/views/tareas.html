@@ -1,57 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--META-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--TITLE-->
-        <title>Semillas || CheckList</title>
-        <!--CSS-->
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/navbar.css">
-        <!--ICO-->
-        <link rel="shortcut icon" href="../images/logoSGreen_1.svg" type="image/x-icon">
-    </head>
-    <body>
-        <!--NAVBAR-->
-        <nav>
-            <div class="icon">
-                <a href="../../index.html">
-                    <svg heigth="80" width="80">
-                        <circle cx="40" cy="40" r=35 stroke-width="4" fill="none" ></circle>
-                    </svg>
-                    <img src="../images/info.svg" alt="" class="iconTitle">
-                </a>
-            </div>
-            <div class="icon">
-                <a href="./indicadores.html">
-                    <svg heigth="80" width="80">
-                        <circle cx="40" cy="40" r=35 stroke-width="4" fill="none" ></circle>
-                    </svg>
-                    <img src="../images/indicators.svg" alt="" class="iconTitle">
-                </a>
-            </div>
-            <div class="icon">
-                <a href="./tareas.html">
-                    <svg heigth="80" width="80">
-                        <circle cx="40" cy="40" r=35 stroke-width="4" fill="none" ></circle>
-                    </svg>
-                    <img src="../images/checklist.svg" alt="" class="iconTitle">
-                </a>
-            </div>
-        </nav>
-        <!--END NAVBAR-->
-        <!--TITLE-->
-        <div class="containerTitle">
-            <div class="logo">
-                <img src="../images/logoSGreen_1.svg" alt="" class="imgLogo">
-            </div>
-            <h1 class="tituloGeneral">Check List</h1>
-            <div class="exit">
-                <img src="../images/logoff.svg" alt="" class="btnExit">
-            </div>
+  <head>
+    <!--META-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--TITLE-->
+    <title>Semillas || CheckList</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/figuras.css" />
+    <link rel="stylesheet" href="../css/animaciones.css" />
+    <link rel="stylesheet" href="../css/leidy.css" />
+    <!--ICO-->
+    <link
+      rel="shortcut icon"
+      href="../images/logoSWhite_1.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav>
+      <div class="icon">
+        <a href="../../index.html">
+          <svg heigth="80" width="80">
+            <circle
+              cx="40"
+              cy="40"
+              r="35"
+              stroke-width="4"
+              fill="none"
+            ></circle>
+          </svg>
+          <img src="../images/info.svg" alt="" class="iconTitle" />
+        </a>
+      </div>
+      <div class="icon">
+        <a href="./indicadores.html">
+          <svg heigth="80" width="80">
+            <circle
+              cx="40"
+              cy="40"
+              r="35"
+              stroke-width="4"
+              fill="none"
+            ></circle>
+          </svg>
+          <img src="../images/indicators.svg" alt="" class="iconTitle" />
+        </a>
+      </div>
+      <div class="icon">
+        <a href="./tareas.html">
+          <svg heigth="80" width="80">
+            <circle
+              cx="40"
+              cy="40"
+              r="35"
+              stroke-width="4"
+              fill="none"
+            ></circle>
+          </svg>
+          <img src="../images/checklist.svg" alt="" class="iconTitle" />
+        </a>
+      </div>
+    </nav>
+    <!--END NAVBAR-->
+    <!--TITLE-->
+    <div class="containerTitle">
+      <div class="logo">
+        <img src="../images/logoSWhite_1.svg" alt="" class="imgLogo" />
+      </div>
+      <h1 class="tituloGeneral">Check List</h1>
+      <div class="exit">
+        <div class="shutdown rubberBand">
+            <div class="inner"></div>
+            <div class="sub-bar"></div>
+            <div class="bar"></div>
         </div>
-        <!--END TITLE-->
-    </body>
+    </div>
+    </div>
+    <!--END TITLE-->
+    <!--CHECKLIST-->
+    <div class="frame">
+      <div class="listPendientes">
+        <header>
+          <h2>Pendientes</h2>
+        </header>
+        <form class="chulitos">
+          <ul class="list">
+            <li>
+              <label for="tarea-1">Tarea 1</label>
+              <input id="item1" type="checkbox" class="casilla" />
+            </li>
+            <li>
+              <label for="tarea-2">Tarea 2</label>
+              <input id="item2" type="checkbox" class="casilla" />
+            </li>
+            <li>
+              <label for="tarea-3">Tarea 3</label>
+              <input id="item3" type="checkbox" class="casilla" />
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="listCompleta">
+        <header>
+          <h2>Completadas</h2>
+        </header>
+        <form class="chulitos">
+          <ul class="list">
+            <li>
+              <label for="tarea-1" class="label-check">Tarea 1</label>
+              <input id="item1" type="checkbox" class="casilla" checked />
+            </li>
+            <li>
+              <label for="tarea-2" class="label-check">Tarea 2</label>
+              <input id="item2" type="checkbox" class="casilla" checked />
+            </li>
+            <li>
+              <label for="tarea-3" class="label-check">Tarea 3</label>
+              <input id="item3" type="checkbox" class="casilla" checked />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="containerBtn">
+        <button class="btnCheck add bounceIn">Agregar</button>
+        <button class="btnCheck edit bounceIn">Editar</button>
+        <button class="btnCheck delete bounceIn">Eliminar</button>
+    </div>
+    <!--END CHECKLIST-->
+  </body>
 </html>

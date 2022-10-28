@@ -10,8 +10,12 @@
         <!--CSS-->
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/navbar.css">
+        <link rel="stylesheet" href="assets/css/figuras.css">
+        <link rel="stylesheet" href="assets/css/animaciones.css">
         <!--ICO-->
-        <link rel="shortcut icon" href="assets/images/logoSGreen_1.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/images/logoSWhite_1.svg" type="image/x-icon">
+        <!--CDN FONTAWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <!--NAVBAR-->
@@ -45,17 +49,68 @@
         <!--HEADER-->
         <div class="containerTitle">
             <div class="logo">
-                <img src="assets/images/logoSGreen_1.svg" alt="" class="imgLogo">
+                <img src="assets/images/logoSWhite_1.svg" alt="" class="imgLogo">
             </div>
             <h1 class="tituloGeneral">Informacion General</h1>
             <div class="exit">
-                <img src="assets/images/logoff.svg" alt="" class="btnExit">
+                <div class="shutdown rubberBand">
+                    <div class="inner"></div>
+                    <div class="sub-bar"></div>
+                    <div class="bar"></div>
+                </div>
             </div>
         </div>
         <!--END HEADER-->
         <!--USER-->
+        <div class="containerUser">
+            <div class="bandera">
+                <img src="assets/images/user.svg" alt="" class="userImg">
+            </div>
+            <div class="nombreUser">
+                <p class="nameUser slideInLeft">Jefferson Pulido</p>
+            </div>
+        </div>
         <!--END USER-->
+        <hr>
         <!--DIPLOMADOS-->
+        <p class="tituloSeccion">Diplomados Inscritos</p>
+        <div class="containerDiplomados">
+            <div class="trapecio fadeInUp">
+                <div class="contentTrap">
+                    <p class="trapecioTitulo">SSG-ST</p>
+                    <img src="assets/images/logoSWhite_1.svg" class="trapecioLogo" alt="">
+                </div>
+            </div>
+            <div class="trapecioInvertido fadeInUp">
+                <div class="contentTrapInvertido">
+                    <p class="trapecioTitulo">FrontEnd</p>
+                    <img src="assets/images/logoSWhite_1.svg" class="trapecioLogo" alt="">
+                </div>
+            </div>
+            <div class="trapecio fadeInUp">
+                <div class="contentTrap">
+                    <p class="trapecioTitulo">Mecanica</p>
+                    <img src="assets/images/logoSWhite_1.svg" class="trapecioLogo" alt="">
+                </div>
+            </div>
+        </div>
         <!--END DIPLOMADOS-->
+        <!--FOOTER-->
+        <br>
+        <hr>
+        <p class="tituloSeccion">Acerca de Nosotros</p>
+        <footer>
+            <div class="textFooter">
+                La Fundación Semillas es una entidad sin animo de lucro que permite a estudiantes de todo sur América, acceder a diferentes diplomados en educación superior y, además, realizar prácticas pagas con empresas del sector, para así reforzar lo aprendido.
+            </div>
+            <div class="redes">
+                <i class="fa-brands fa-instagram bounceIn"></i>
+                <i class="fa-brands fa-facebook bounceIn"></i>
+                <i class="fa-brands fa-twitter bounceIn"></i>
+                <i class="fa-brands fa-linkedin bounceIn"></i>
+                <i class="fa-brands fa-whatsapp bounceIn"></i>
+            </div>
+        </footer>
+        <!--END FOOTER-->
     </body>
 </html>

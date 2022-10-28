@@ -1,10 +1,11 @@
 /**FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&family=Playfair+Display:ital,wght@0,400;0,800;1,400&display=swap');
+
 /**VAR*/
-:root{
+:root {
     /*COLORES*/
-    --texto: #000000;
-    --fondo: #D1D2D2;
+    --texto: #ffffff;
+    --fondo: #000000;
     --verdeOscuro: #009458;
     --verdeClaro: #69BF97;
     /*FUENTES*/
@@ -18,35 +19,41 @@
     --p: 14pt;
 }
 
-html, body{
-    background-color: var(--fondo) !important; 
+html,
+body {
+    background-color: var(--fondo) !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
+
 /*TITLE*/
-.containerTitle{
+.containerTitle {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.logo{
+.logo {
     width: 7%;
     display: grid;
     margin-left: 5%;
     margin-top: 1%;
 }
 
-.imgLogo{
+.imgLogo {
     width: 100%;
     justify-self: center;
     align-self: center;
 }
 
-.exit{
+.exit {
     display: grid;
     margin-right: 3%;
 }
 
-.btnExit{
+.btnExit {
     width: 5em;
     height: 2.5em;
     justify-self: center;
@@ -62,20 +69,173 @@ html, body{
     transition: all .4s;
 }
 
-.tituloGeneral{
+/* TITULO GRAL*/
+.tituloGeneral {
     font-family: var(--titulos);
-    color: var(--verdeOscuro);
+    color: var(--texto);
+}
+
+/* IMG USER*/
+.userImg {
+    width: 12vh;
+}
+
+/*NAME USER*/
+
+.nombreUser {
+    margin-left: -40px;
+}
+
+.nameUser {
+    color: var(--texto);
+    font-family: var(--titulos);
+    font-weight: 600;
+    font-size: var(--h4);
+    border: 1.5px solid var(--texto);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 10px;
+    background-color: var(--verdeOscuro);
+    width: 100%;
+}
+
+/*HR*/
+hr {
+    color: white;
+    width: 80%;
+}
+
+.tituloSeccion {
+    color: var(--texto);
+    font-family: var(--titulos);
+    font-weight: 600;
+    font-size: var(--h4);
+    margin-left: 22.5%;
+    margin-bottom: 20%;
+}
+
+/*DIPLOMADOS*/
+.containerDiplomados {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+    cursor: pointer;
+}
+
+.contentTrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.contentTrapInvertido {
+    display: flex;
+    justify-content: center;
+    rotate: 180deg;
+    margin-top: 5px;
+}
+
+.trapecioTitulo {
+    color: var(--texto);
+    font-family: var(--parrafos);
+    font-weight: 600;
+    font-size: var(--h4);
+}
+
+.trapecioLogo {
+    width: 30%;
+    margin-left: 18px;
+}
+
+/*FOOTER*/
+.textFooter {
+    color: var(--texto);
+    font-family: var(--parrafos);
+    margin-top: -50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: var(--p);
+    margin-bottom: 10%;
+}
+
+.redes {
+    color: var(--texto);
+    font-size: var(--h3);
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-bottom: 10%;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-    .exit{
-    }
-    .logo{
+    .logo {
         display: none;
     }
-    .tituloGeneral{
+
+    .tituloGeneral {
         font-size: var(--h4);
         margin-left: 5%;
+    }
+}
+/* DESKTOP MEDIUM*/
+@media (min-width: 768px) {
+    .tituloSeccion {
+        margin-left: 41%;
+        margin-bottom: 7%;
+    }
+
+    .containerDiplomados {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: -5% 10% 0% 10%;
+    }
+
+    .redes {
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: -5%;
+    }
+
+    .userImg {
+        width: 18vh;
+    }
+}
+
+/* DESKTOP BIG*/
+@media (min-width: 1800px) {
+    .tituloSeccion {
+        margin-left: 44%;
+        margin-bottom: 5%;
+    }
+    
+    .containerDiplomados {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: -5% 0% 0% 10%;
+    }
+
+    .redes {
+        margin-right: 30%;
+        margin-left: 30%;
+        margin-top: -5%;
+    }
+
+    .userImg {
+        width: 12vh;
     }
 }
