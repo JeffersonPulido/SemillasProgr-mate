@@ -57,26 +57,47 @@
         <!--TABLE-->
 
             <div class="frame">
-                <header>
-                    <h2>Completadas</h2>
-                </header>
-                <form>
-                    <ul class="list">
-                        <li>
-                            <label for="tarea-1">Tarea 1</label>
-                            <input id="item1" type="checkbox" >
-                        </li>
-                        <li>
-                            <label for="tarea-2">Tarea 2</label>
-                            <input id="item2" type="checkbox" >
-                        </li>
-                        <li><label for="tarea-3">Tarea 3</label>
-                            <input id="item3" type="checkbox" >
-                        </li>
-                    </ul>
-                </form>
+                <div class="listPendientes">
+                    <header>
+                        <h2>Pendientes</h2>
+                    </header>
+                    <form class="checkmark">
+                        <ul class="list">
+                            <li>
+                                <label for="tarea-1">Tarea 1</label>
+                                <input id="item1" class="casilla" type="checkbox">
+                            </li>
+                            <li>
+                                <label for="tarea-2">Tarea 2</label>
+                                <input id="item2" class="casilla" type="checkbox">
+                            </li>
+                            <li><label for="tarea-3">Tarea 3</label>
+                                <input id="item3" class="casilla" type="checkbox">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="listCompletadas">
+                    <header>
+                        <h2>Completadas</h2>
+                    </header>
+                    <form class="checkmark">
+                        <ul class="list2">
+                            <li>
+                                <label for="tarea-1">Tarea 1</label>
+                                <input id="item1" class="box" type="checkbox" checked="">
+                            </li>
+                            <li>
+                                <label for="tarea-2">Tarea 2</label>
+                                <input id="item2" class="box" type="checkbox" checked="">
+                            </li>
+                            <li><label for="tarea-3">Tarea 3</label>
+                                <input id="item3" class="box" type="checkbox" checked="">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
             </div>
-
-
+        <!--END TABLE-->
     </body>
 </html>
