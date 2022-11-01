@@ -117,3 +117,104 @@ input[type="radio"]:checked~label {
         font-size: var(--h3);
     }
 }
+
+/**FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&family=Playfair+Display:ital,wght@0,400;0,800;1,400&display=swap');
+
+/**VAR*/
+:root {
+    /*COLORES*/
+    --texto: #ffffff;
+    --fondo: #000000;
+    --verdeOscuro: #009458;
+    --verdeClaro: #69BF97;
+    /*FUENTES*/
+    --titulos: 'Dosis', sans-serif;
+    --parrafos: 'Playfair Display', serif;
+    /*TAMAÑOS*/
+    --h1: 50pt;
+    --h2: 40pt;
+    --h3: 30pt;
+    --h4: 20pt;
+    --p: 14pt;
+}
+
+.circle {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 5%;
+    margin: 5%;
+    align-content: center;
+}
+
+.card {
+    position: relative;
+    border-radius: 10%;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.text {
+    position: relative;
+    color: var(--texto);
+    font-weight: 800;
+    font-size: var(--p);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: var(--titulos);
+}
+
+/*CIRCULO*/
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    padding: 1em;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+svg.radial-progress circle {
+    fill: rgba(0, 0, 0, 0);
+    stroke: var(--verdeOscuro);
+    stroke-dashoffset: 219.91148575129;
+    stroke-width: 10;
+}
+
+svg.radial-progress:hover circle {
+    fill: rgba(0, 0, 0, 0);
+    stroke: var(--texto);
+    stroke-dashoffset: 219.91148575129;
+    stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete {
+    opacity: 0.25;
+}
+
+svg.radial-progress circle.complete {
+    stroke-dasharray: 219.91148575129;
+}
+
+svg.radial-progress text {
+    fill: #fff;
+    text-anchor: middle;
+    cursor: default;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .circle {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 1%;
+        margin: 4%;
+    }
+    svg.radial-progress{
+        padding: 0;
+        max-width: 100px;
+    }
+}
