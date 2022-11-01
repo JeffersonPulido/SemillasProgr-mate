@@ -144,7 +144,6 @@ input[type="radio"]:checked~label {
     grid-template-columns: repeat(4, 2fr);
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
-    gap: 5%;
     margin: 5%;
     align-content: center;
 }
@@ -210,7 +209,7 @@ svg.radial-progress text {
     .circle {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        gap: 1%;
+        gap: 0%;
         margin: 4%;
     }
     svg.radial-progress{
